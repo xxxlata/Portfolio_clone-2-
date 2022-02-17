@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h3{
+    color: cornflowerblue;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#profile{
+    background-color: #6bbbf4;
+    padding: 5rem 0;
+    margin-top: 5rem;
+}
+
+#profile h4{
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#profile p{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#profile span{
+    font-weight: bold;
+    color: white;
+}
+
+#profile-img{
+    margin: 1rem 0;
+}
+
+#profile-img img{
+    width: 15%; 
+}
+
+footer{
+    background-color: #eef7ff;
+    padding: 6rem 0;
+}
+
+footer div{
+    line-height: 3rem;
+    font-weight: 100;
+}
+

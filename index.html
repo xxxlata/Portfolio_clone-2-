@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dce981d912.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="works.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/Cat-icon.png">
+    <title>김주하 포트폴리오</title>
+</head>
+<body>
+    <nav>
+        <div id="nav-menu" class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <span><a href="#">JUHA</a></span>
+                </div>
+                <ul class="menu d-flex">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="hidden-menu" class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <span><a href="#">JUHA</a></span>
+                </div>
+                <div class="hidden-bar">
+                    <div id="bar" class="border d-flex justify-content-center align-items-center">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="target-menu">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // html dom 이 다 로딩된 후 실행된다.
+        $(document).ready(function(){
+            // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+            $("#bar").click(function(){
+                var submenu = $(this).next("ul");
+     
+                // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
+                if( submenu.is(":visible") ){
+                    submenu.slideUp();
+                }else{
+                    submenu.slideDown();
+                }
+            });
+        });
+    </script>
+    <div id="profile" class="d-flex flex-column justify-content-center text-center">
+        <h4>
+            JUHA KIM'S PORTFOLIO
+        </h4>
+        <div id="profile-img">
+            <img src="img/juha.jpeg" class="rounded-circle" alt="...">
+        </div>
+        <p>
+            안녕하세요 <span>Front-end developer</span> 김주하입니다.<br>
+            제 포트폴리오 페이지에 오신걸 환영합니다.
+        </p>
+    </div>
+    <section id="about">
+        <div class="container">
+            <div class="row py-5">
+                <h3 class="text-center">ABOUT ME</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <img src="img/myface.jpg" alt="">
+                </div>
+                <p class="px-4 col-lg-7">
+                    <span>
+                        "연꽃에 물을 주다."<br>
+                        제 이름의 뜻 처럼 진흙 속에서도 화려한 꽃을 피워내는 김주하입니다 :)
+                    </span>
+                    <br><br>
+                    풀스택 현역 개발자님께 1:1로 가르침을 받고, 꾸준히 클론 코딩을 통하여 HTML, CSS, Scss, React, Bootstrap을 공부했습니다.
+                    <br>
+                    <br>
+                    이전에는 동물관련 전공으로써 다양한 사육 경험을 하며 인내와 배려, 책임감을 배웠고, 졸업 전 마지막 학기에 제 진로에 대해 다시 한 번 고민하게 되었습니다.
+                    <br>
+                    <br>
+                    동물들과의 유대관계를 쌓는 것은 더 없는 행복이였지만,
+                     제가 정말 사랑하는 동물들과의 일과가 업이 된다면, 제 생각과 다른 결정을 내려야만 하는 일도 감수해야한다는 것 또한 알게되었습니다.
+                    학교를 나오며 다시 한 번 3년의 공백기간 동안 다양한 서비스업에 종사하며 제가 좋아하는 것들을 곰곰히 생각해보는 시간을 보냈습니다.
+                    <br>
+                    <br>
+                    그러던 중 아는 지인을 통해 웹 개발이라는 직업을 소개 받게되었고,<br>
+                     호기심으로 시작했던 개발 생활이 어느새 뿌리깊게 제 가슴 속 깊이 자리잡게 되었습니다. <br>
+                    공부에 재미를 붙이자 욕심이나 정식으로 프론트엔드 개발자를 꿈꾸게 되었습니다. 진정한 컴퓨터 개발에 재미를 아는 사람이라면, 성장도 열정도 그 질이 다름을 아실것입니다. 
+                    <br>
+                    <br>
+                    최근에는 (어떤 커뮤니티 프로그램들 노션이나 데이터베이스)에도 욕심이 생겨 공부 중 에 있습니다. 
+                    <br>사용자가 편리하게 사용할 웹을 만드는 웹프로그래머가 되기 위해 끊임없이 노력중인 김주하입니다.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div id="title" class="row text-center">
+            <h3>SKILLS</h3>
+            <span>What I have</span>
+        </div>
+        <div class="row">
+            <div class="py-5 col-lg-4">
+                <div class="d-flex justify-content-center">
+                    <img src="img/20220217_140520.png" alt="">
+                </div>
+                <div class="py-4 row text-center fonts">
+                    <h5>HTML</h5>
+                    <span class="py-3">마크업, 페이지 콘텐트 구조화, 폼요소, 테이블 등 사용</span>
+                </div>
+            </div>
+            <div class="py-5 col-lg-4">
+                <div class="d-flex justify-content-center">
+                    <img src="img/20220217_140547.png" alt="">
+                </div>
+                <div class="py-4 row text-center fonts">
+                    <h5>CSS</h5>
+                    <span class="py-3">배경 스타일링, 텍스트 스타일링 등</span>
+                </div>
+            </div>
+            <div class="py-5 col-lg-4">
+                <div class="d-flex justify-content-center">
+                    <img src="img/20220217_140629.png" alt="">
+                </div>
+                <div class="py-4 row text-center fonts">
+                    <h5>Javascript</h5>
+                    <span class="py-3">네비게이션 구성, 탭메뉴 구현, 폼 유효성검사 등</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="py-5 col-lg-4">
+                <div class="d-flex justify-content-center">
+                    <img src="img/20220217_140652.png" alt="">
+                </div>
+                <div class="py-4 row text-center fonts">
+                    <h5>Angular JS</h5>
+                    <span class="py-3">AngularJS 1.X, 반응형 웹사이트, component, Restangular, 데이터 파싱 등</span>
+                </div>
+            </div>
+            <div class="py-5 col-lg-4">
+                <div class="d-flex justify-content-center">
+                    <img src="img/20220217_140711.png" alt="">
+                </div>
+                <div class="py-4 row text-center fonts">
+                    <h5>Git</h5>
+                    <span class="py-3">프로젝트 코드 관리, add, commit, pull, push, branch 사용</span>
+                </div>
+            </div>
+            <div class="py-5 col-lg-4">
+                <div class="d-flex justify-content-center">
+                    <img src="img/20220217_140728.png" alt="">
+                </div>
+                <div class="py-4 row text-center fonts">
+                    <h5>Bootstrap</h5>
+                    <span class="py-3">레이아웃, 버튼, 입력창 등의 디자인 사용</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works">
+        <div id="title" class="row text-center">
+            <h3>WORKS</h3>
+            <span>What I have created</span>
+        </div>
+        <div class="d-flex flex-wrap justify-content-evenly">
+            <div class="my-4 img-thumbnail">
+                <div>
+                    <img src="img/paint_demo.gif" alt="">
+                </div>
+                <div class="text-center">
+                    <a href="">
+                        <span>
+                            paint<br>
+                            그림판
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="my-4 img-thumbnail">
+                <div>
+                    <img src="img/movie_demo.png" alt="">
+                </div>
+                <div class="text-center">
+                    <a href="">
+                        <span>
+                            movie<br>
+                            영화추천페이지
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="my-4 img-thumbnail">
+                <div>
+                    <img src="img/portfolio_demo.png" alt="">
+                </div>
+                <div class="text-center">
+                    <a href="">
+                        <span>
+                            portfolio<br>
+                            포트폴리오 페이지
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div id="title" class="row text-center">
+            <h3>CONTACT</h3>
+            <span>Contact me on...</span>
+        </div>
+        <div class="e-mail text-center">
+            <i class="fas fa-envelope"></i>hapilover@gmail.com
+        </div>
+        <div class="github text-center">
+            <i class="fab fa-github"></i>https://github.com/xxxlata
+        </div>
+    </section>
+    <footer class="text-center">
+        <div><a href="#"><i class="fas fa-angle-up"></i></a></div>
+        <div>Coded by <a href="https://github.com/xxxlata">Juha Kim</a></div>
+        <div>You can see this <a href="">code</a></div>
+    </footer>
+</body>
+</html>

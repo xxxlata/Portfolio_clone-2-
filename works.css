@@ -1,0 +1,21 @@
+#works {
+    background-color: #eef7ff;
+    padding: 6rem 0;
+}
+#works img{
+    width: 100%;
+    height: 30rem;
+}
+
+#works a {
+    color:#2378c0;
+    line-height: 2rem;
+}
+
+#works a:hover{
+    color: black;
+}
+
+#works .img-thumbnail{
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}

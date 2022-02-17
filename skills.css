@@ -1,0 +1,29 @@
+#skills{
+    background-color: #eef7ff;
+    padding: 6rem 0;
+}
+
+#skills img{
+    width: 5rem;
+    height: auto;
+}
+
+#title{
+    margin-bottom: 4rem;
+}
+
+#title h3{
+    padding-bottom: 1.5rem;
+}
+
+#title span{
+    color: gray;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.fonts span{
+    font-weight: lighter;
+    color: gray;
+    font-size: small;
+}
